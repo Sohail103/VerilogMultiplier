@@ -20,7 +20,8 @@ module MUL_test;
 		#10 data_in = 5;
 	end
 
-	intial begin
+	initial 
+	begin
 		$monitor($time, "%d %b", DP.Y, done);
 		$dumpfile("mul.vcd");
 		$dumpvars(0, MUL_test);
