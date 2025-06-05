@@ -23,7 +23,7 @@ module MUL_test;
 	initial 
 	begin
 		$monitor($time, "%d %b", DP.Y, done);
-		$dumpfile("mul.vcd");
+		$dumpfile("tboutput.vcd");
 		$dumpvars(0, MUL_test);
 	end
 	
