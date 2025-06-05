@@ -5,6 +5,8 @@ module MUL_datapath(eqz, LdA, LdB, LdP, clrP, decB, data_in, clk);
 	output eqz;
 	wire [15:0] X, Y, Z, Bout, Bus;
 
+  assign Bus = data_in;
+
 	PIPO1 A(X, Bus, LdA, clk);
 	PIPO2 P(Y, Z, LdP, clrP, clk);
 	CNTR B(Bout, Bus, LdB, decB, clk);
